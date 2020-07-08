@@ -41,7 +41,7 @@ render={data => (
               data-item-price={product.price}
               data-item-image={product.image.url}
               data-item-name={product.name}
-              data-item-url={`/`}
+              data-item-url={`${window.location.origin}`}
             >
               <div className="Product__image">
                 <Img sizes={product.image.sizes} />
@@ -49,7 +49,7 @@ render={data => (
                 <div className="Product__name">
                   {product.name}
                   <div className="Product__price">
-                    {product.price}€
+                    RM{product.price}
                   </div>
                 </div>
                 <span className="Product__buy">Buy now</span>
